@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Genre Button Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GenreButtonScreen" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="149" translatesAutoresizingMaskIntoConstraints="NO" id="qMO-D5-rbS">
+                                <rect key="frame" x="77" y="148" width="260" height="500"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiJ-WR-ILl">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="60"/>
+                                        <color key="backgroundColor" red="0.42048139328789635" green="1" blue="0.27295079088734275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="mKp-qO-QBT"/>
+                                        </constraints>
+                                        <state key="normal" title="Trance"/>
+                                        <connections>
+                                            <action selector="genre1ButttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mgl-pK-doF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvh-tt-i4w">
+                                        <rect key="frame" x="0.0" y="220" width="260" height="60"/>
+                                        <color key="backgroundColor" red="0.096921719163487907" green="0.73888097405336794" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="7FL-Mp-nuR"/>
+                                        </constraints>
+                                        <state key="normal" title="EDM"/>
+                                        <connections>
+                                            <action selector="genre1ButttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKd-rr-9j1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrE-43-cvG">
+                                        <rect key="frame" x="0.0" y="440" width="260" height="60"/>
+                                        <color key="backgroundColor" red="0.87049081535517592" green="0.75420431978971569" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="NL0-2V-Zsh"/>
+                                        </constraints>
+                                        <state key="normal" title="Pop"/>
+                                        <connections>
+                                            <action selector="genre1ButttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVp-qm-ILd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="LiH-cu-czs"/>
+                                    <constraint firstAttribute="height" constant="500" id="ntd-Q7-24n"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nj-Re-Y8z">
+                                <rect key="frame" x="77" y="718" width="120" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.45386675896628859" blue="0.23393397518201298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Dtf-au-iJN"/>
+                                    <constraint firstAttribute="width" constant="120" id="caw-FH-3NY"/>
+                                </constraints>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="StopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aJr-PG-whG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUS-6P-ZDI">
+                                <rect key="frame" x="217" y="718" width="120" height="60"/>
+                                <color key="backgroundColor" red="0.75802440477009803" green="1" blue="0.85577347700515982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EOa-wg-suj"/>
+                                    <constraint firstAttribute="width" constant="120" id="hku-s2-Ora"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="NextButtonTApped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GfX-QL-248"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RUS-6P-ZDI" firstAttribute="centerY" secondItem="2Nj-Re-Y8z" secondAttribute="centerY" id="SEt-2e-sgs"/>
+                            <constraint firstItem="2Nj-Re-Y8z" firstAttribute="top" secondItem="qMO-D5-rbS" secondAttribute="bottom" constant="70" id="VRF-EL-bkA"/>
+                            <constraint firstItem="qMO-D5-rbS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="XZw-MX-Ope"/>
+                            <constraint firstItem="RUS-6P-ZDI" firstAttribute="trailing" secondItem="qMO-D5-rbS" secondAttribute="trailing" id="nh5-qj-FXf"/>
+                            <constraint firstItem="qMO-D5-rbS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vIO-PL-1Mu"/>
+                            <constraint firstItem="2Nj-Re-Y8z" firstAttribute="leading" secondItem="qMO-D5-rbS" secondAttribute="leading" id="zNL-zb-sXD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="EDMGenre" destination="qMO-D5-rbS" id="CVo-Ou-6bt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
